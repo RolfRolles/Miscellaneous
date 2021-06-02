@@ -35,7 +35,7 @@ def ChangeVariableType(func_ea, lvar, tif):
 	lsi.ll = lvar
 	lsi.type = ida_typeinf.tinfo_t(tif)
 	if not ida_hexrays.modify_user_lvar_info(func_ea, ida_hexrays.MLI_TYPE, lsi):
-		print("[E] Could not modify lvar type for %s" % lvar.name)
+		ida_kernwin.warning("Could not modify lvar type for %s" % lvar.name)
 		return False
 	return True
 

@@ -29,7 +29,7 @@ def GetTypeSignature(apiName):
 	# On any failure, return None
 	return None
 
-# Convenience function to set 
+# Convenience function to set a type for a local variable
 def ChangeVariableType(func_ea, lvar, tif):
 	lsi = ida_hexrays.lvar_saved_info_t()
 	lsi.ll = lvar
@@ -102,7 +102,7 @@ ApiPtrTypeSetUninstall()
 ApiPtrTypeSetInstall()
 
 # This class lets us only show the menu item when the cursor is currently over
-# a pointer-sized local variables
+# a pointer-sized local variable
 class ApiPtrHooks(ida_hexrays.Hexrays_Hooks):
 	def populating_popup(self, widget, popup_handle, vu):
 		if IsPtrSizedLvar(vu):

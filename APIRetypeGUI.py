@@ -1,4 +1,6 @@
+import idaapi
 import ida_hexrays
+import ida_typeinf
 import ida_kernwin
 
 API_TYPE_ACTION_NAME = "setAPIType"

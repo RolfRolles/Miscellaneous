@@ -2,9 +2,10 @@ import idaapi
 import ida_hexrays
 import ida_typeinf
 import ida_kernwin
+import ida_ida
 
 API_TYPE_ACTION_NAME = "setAPIType"
-API_TYPE_ACTION_DESC = "Re-type as API * ..."
+API_TYPE_ACTION_DESC = "Re-type as API *..."
 API_TYPE_ACTION_SHORTCUT = "CTRL-SHIFT-A"
 
 # Look up the type signature for an API name. 

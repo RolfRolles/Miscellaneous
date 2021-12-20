@@ -1,5 +1,11 @@
 In case you're reverse engineering a C++ program compiled with MSVC, and you can't match the binary to the headers on your machine, here is a list of repositories that contain various versions of the MSVC C/C++ CRT. I collected these by searching GitHub for `filename:crtversion.h _VC_CRT_BUILD_VERSION` and removing duplicates.
 
+* 6.0 [STL only]: https://github.com/9176324/WinDDK/tree/1ed3987db6e72d1fb9c6298fddf0c080b8f591e1/7600.16385.1/inc/api/crt/stl60
+
+* 7.0 [STL only]: https://github.com/9176324/WinDDK/tree/1ed3987db6e72d1fb9c6298fddf0c080b8f591e1/7600.16385.1/inc/api/crt/stl70
+
+* 8.0: https://github.com/shihyu/learn_c
+
 * 10.0.30319:  https://github.com/nihon-tc/Rtest/blob/8246e4d21323802fb84c406edc1a005991304f5a/header/Microsoft%20Visual%20Studio%2010.0/VC/include/
 
 * 11.0.50522:  https://github.com/ir0nc0w/cross-compile_for_Windows/blob/08935f0864f497ee7fc6f13aba1b598701a04be1/VS2012/vc/include/

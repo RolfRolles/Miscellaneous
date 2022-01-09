@@ -4,7 +4,7 @@ In case you're reverse engineering a C++ program compiled with MSVC, and you can
 
 * 7.0 [STL only]: https://github.com/9176324/WinDDK/tree/1ed3987db6e72d1fb9c6298fddf0c080b8f591e1/7600.16385.1/inc/api/crt/stl70
 
-* 8.0: https://github.com/shihyu/learn_c
+* 8.0: https://github.com/shihyu/learn_c/tree/master/vc_lib_src/src
 
 * 10.0.30319:  https://github.com/nihon-tc/Rtest/blob/8246e4d21323802fb84c406edc1a005991304f5a/header/Microsoft%20Visual%20Studio%2010.0/VC/include/
 

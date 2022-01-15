@@ -1,10 +1,14 @@
-In case you're reverse engineering a C++ program compiled with MSVC, and you can't match the binary to the headers on your machine, here is a list of repositories that contain various versions of the MSVC C/C++ CRT. I collected these by searching GitHub for `filename:crtversion.h _VC_CRT_BUILD_VERSION` and removing duplicates.
+In case you're reverse engineering a C++ program compiled with MSVC, and you can't match the binary to the headers on your machine, here is a list of repositories that contain various versions of the MSVC C/C++ CRT. I collected these by searching GitHub for `filename:crtversion.h _VC_CRT_BUILD_VERSION` and removing duplicates. (That constant was introduced in 10.0; for earlier versions, search for `filename:crtassem.h _CRT_ASSEMBLY_VERSION`.)
 
 * 6.0 [STL only]: https://github.com/9176324/WinDDK/tree/1ed3987db6e72d1fb9c6298fddf0c080b8f591e1/7600.16385.1/inc/api/crt/stl60
 
 * 7.0 [STL only]: https://github.com/9176324/WinDDK/tree/1ed3987db6e72d1fb9c6298fddf0c080b8f591e1/7600.16385.1/inc/api/crt/stl70
 
-* 8.0: https://github.com/shihyu/learn_c/tree/master/vc_lib_src/src
+* 8.0.50608: https://github.com/willjoseph/cpparch-old/blob/e450001bc1de8657b44556747b51a4458619ac7d/cpparch/cppparse/msvc-8.0/include/
+* 8.0.50727: https://github.com/sanjeevpunj/dotnetinstaller/blob/bc3cb3e97e3ac850a03fe80549eacad789acf4ca/ThirdParty/Microsoft/Visual%20Studio%208/VC/include/
+
+* 9.0.21022: https://github.com/os1-2/team/blob/78234b74ccb75f2514ae6e3bba2818a75737b429/msvcr90/
+* 9.0.30729: https://github.com/cansou/msvcrt/blob/cbbce9b9b1617bee5df6dbba7fb8d99a9174b66c/src/
 
 * 10.0.30319:  https://github.com/nihon-tc/Rtest/blob/8246e4d21323802fb84c406edc1a005991304f5a/header/Microsoft%20Visual%20Studio%2010.0/VC/include/
 
@@ -22,6 +26,7 @@ In case you're reverse engineering a C++ program compiled with MSVC, and you can
 * 14.0.24225:  https://github.com/Chuyu-Team/VC-LTL/blob/489e2a9fe2b61ff73dfbcdf52052ec4da423f057/VC/14.0.24225/include/
 * 14.0.24231:  https://github.com/Chuyu-Team/VC-LTL/blob/489e2a9fe2b61ff73dfbcdf52052ec4da423f057/VC/14.0.24231/include/
 * 14.0.24245:  https://github.com/suhao/toolchain/blob/ae4cb05c55ceceb7289bc28718ad22e2a8b6c474/vs2015/vc/include/
+
 * 14.10.24728: https://github.com/light-tech/BuildSystem/blob/f847c745a6de199ac4108b96b20fba4783b07f60/include/msvc/
 * 14.10.25017: https://github.com/jjzhang166/vc-ltl/blob/4e9df5d0951b10b546290cd945a2ba31172b7a8e/VC/141/include/
 * 14.11.25506: https://github.com/omengxiang/cominc/blob/fa25bb947cddbd71bd11af864d3f2c1670487fe6/win/include/
@@ -31,6 +36,7 @@ In case you're reverse engineering a C++ program compiled with MSVC, and you can
 * 14.15.26726: https://github.com/Chuyu-Team/VC-LTL/blob/489e2a9fe2b61ff73dfbcdf52052ec4da423f057/VC/14.15.26726/include/
 * 14.16.27023: https://github.com/ir0nc0w/cross-compile_for_Windows/blob/08935f0864f497ee7fc6f13aba1b598701a04be1/VS2017/vc/include/
 * 14.16.27033: https://github.com/ojdkbuild/tools_toolchain_vs2017bt_15936/blob/db988fa6fd0e2c972d816f1072e59e2cf1680126/VC/Tools/MSVC/14.16.27023/include/
+
 * 14.20.27508: https://github.com/NoOne-hub/avc_save/blob/f216a197cd76dd639d509c4d89a88eead73d008c/MSVC_14.20.27508/
 * 14.21.27702: https://github.com/0xCM/arrows/blob/b02c67b4f2a19518bec4c628c1516167eee934cc/asm/docs/headers/msvc/
 * 14.22.27905: https://github.com/xe5700/JavaAppLauncher/blob/093def2c04acee96778fd4b21670f2e2e51fc1a9/VC-LTL/VC/14.22.27905/include/

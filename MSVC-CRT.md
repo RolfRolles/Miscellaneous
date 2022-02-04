@@ -52,4 +52,6 @@ In case you're reverse engineering a C++ program compiled with MSVC, and you can
 * 14.29.30040: https://github.com/mulsicpp/CPPBuilder/blob/5bbd53ed697d8111e9d7e95273bad0f9f4f5171a/cppbuilder_win32/msvc/include/
 * 14.29.30133: https://github.com/ojdkbuild/tools_toolchain_vs2019bt_16113/blob/8739e474753c93215ecade7c36bb0f96b7f3903b/VC/Tools/MSVC/14.29.30133/include/
 
+* 14.30.30705: https://github.com/LuoXue-Developers/CppLibrarys/tree/09396018e88f7ba1f0d674e27279202bc66a1c2d/CppLibrarys/Std/include
+
 The STL is now legitimately open source at https://github.com/microsoft/STL

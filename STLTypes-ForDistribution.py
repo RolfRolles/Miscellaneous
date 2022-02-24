@@ -1,6 +1,7 @@
 # (C) Rolf Rolles, Mobius Strip Reverse Engineering, 9/21/2021.
 
 import idaapi
+from functools import reduce
 
 stl_map_keyvalue_fmt = ("struct {2}_{3}_keyvalue_t"
 "{{"
@@ -200,6 +201,6 @@ def MakeSharedPtrTypes(sEltType, sEltName=None):
 	stl_types_reified = map(lambda s:s.format(sEltType,sEltName),stl_shared_ptr_templates)
 	stl_types_reduced = reduce(lambda x,y: x+y, stl_types_reified)
 	if not ParseOneDecl(stl_types_reduced):
-		print "Could not parse declaration:"
+		print("Could not parse declaration:")
 		return False
 	return True
